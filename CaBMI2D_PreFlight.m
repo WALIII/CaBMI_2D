@@ -18,16 +18,16 @@ close all
 %   1.Load in ROI  data
 load('csv_data.mat');
 
-A = load('ave_roi.mat');
-B = load('Direct_roi.mat');
+A = load('ave_roi.mat'); % indirect neurons
+B = load('Direct_roi.mat'); % Direct Neurons
 roi_ave1 = A.roi_ave;
 roi_ave2 = B.roi_ave;
 ROIa = A.ROI;
 ROIb = B.ROIS;
 D = B.D;
 
-Abase = load('Indirect_roi_map.mat');
-Bbase = load('Direct_roi_map.mat');
+Abase = load('Indirect_roi_map.mat'); % Baseline, of Indiect
+Bbase = load('Direct_roi_map.mat');% Baseline of Direct Neurons
 roi_ave3 = Abase.roi_ave;
 roi_ave4 = Bbase.roi_ave;
 
